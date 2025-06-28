@@ -22,11 +22,13 @@ function App() {
       <div className="loginContainer">
         <h1>Login Page</h1>
         {!isLogin && <h5>Welcome, user!</h5>}
-        {error && ( <div style={{marginTop:'10px', marginBottom:'10px'}}>{error}</div>)}
+        {error && (
+          <div style={{ marginTop: "10px", marginBottom: "10px" }}>{error}</div>
+        )}
         {isLogin && (
           <form onSubmit={handleSubmit} className="formContainer">
-            <label htmlFor="username">
-              Username:
+            <div>
+              <label htmlFor="username">Username</label>
               <input
                 id="username"
                 type="text"
@@ -36,10 +38,10 @@ function App() {
                 onChange={(e) => setUsername(e.target.value)}
                 required
               />
-            </label>
+            </div>
 
-            <label htmlFor="password">
-              Password:
+            <div>
+              <label htmlFor="password">Password</label>
               <input
                 id="password"
                 type="password"
@@ -49,9 +51,9 @@ function App() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
-            </label>
+            </div>
 
-            <button type="submit">submit</button>
+            <button type="submit">Submit</button>
           </form>
         )}
       </div>
