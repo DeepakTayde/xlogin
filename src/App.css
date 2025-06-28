@@ -24,15 +24,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginContainer{
+  border: 1px solid #282c34;
+  margin-top: 20px;
+  width: fit-content;
+  padding: 20px 40px;
 }
